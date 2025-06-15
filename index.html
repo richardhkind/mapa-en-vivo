@@ -1,32 +1,22 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <title>Mapa en Vivo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="5;URL='https://earth.google.com/web/?kml=https://drive.google.com/uc?export=download&id=1C2K8dRsDyUH-etN8MOpJhfHdIv-cvImE'" />
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
+    body {
+      font-family: sans-serif;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <iframe id="kmlViewer" src="https://earth.google.com/web/"></iframe>
-
-  <script>
-    // Recargar el iframe cada 5 segundos
-    setInterval(() => {
-      const iframe = document.getElementById("kmlViewer");
-      iframe.src = "https://earth.google.com/web/?pli=1&kml=https://drive.google.com/uc?export=download&id=1C2K8dRsDyUH-etN8MOpJhfHdIv-cvImE&t=" + new Date().getTime();
-    }, 5000);
-  </script>
+  <p>Redirigiendo al mapa en tiempo real...<br>Si no se abre, <a href="https://earth.google.com/web/?kml=https://drive.google.com/uc?export=download&id=1C2K8dRsDyUH-etN8MOpJhfHdIv-cvImE" target="_blank">hacé clic aquí</a>.</p>
 </body>
 </html>
+
